@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Boomer Returns</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.8.0/sweetalert2.min.css">
+</head>
+
+<body>
+  <div class="gridContainer">
+    <h1 class="pageTitle">Online Pickup Portal</h1>
+    <form class="formContainer" action="TBD">
+      <div class="inputSection">
+        <select class="shippingLabel" name="">
+            <option value="labelPrinted">
+              I have a label printed and ready.
+            </option>
+            <option value="labelUnprinted">
+              I have a label I need to print.
+            </option>
+            <option value="printMyLabel">
+              I have an invoice, please print my label at the lowest possible price.
+            </option>
+            <option value="noLabel">
+              I do not have a shipping label or an order invoice at this time.
+            </option>
+            <option value="amazonPackage">
+              My package is from Amazon.
+            </option>
+          </select>
+      </div>
+
+      <div class="inputSection">
+        <label for="itemDescription">Item Description:</label>
+          <textarea id="itemDescription" rows="4" cols="50">
+              Here will be the item description.
+          </textarea>
+      </div>
+    </form>
+
+    <div class="submitContainer">
+      <a href="" class="userChoice">
+        Submit Order!
+      </a>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.8.0/sweetalert2.min.js"></script>
+  <script src="main.js"></script>
+  <script src="order.js"></script>
+</body>
+
+</html>
